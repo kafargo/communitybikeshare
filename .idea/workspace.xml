@@ -1,27 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/TripComposite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Waypoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/domain/BikeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/domain/WaypointTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communitybikeshare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/communitybikeshare.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Customer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2XOkuDdBokRpgt9KMZci4JzkHbY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.bikeshare.model.domain" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.bikeshare.model.domain.Main" />
+      <module name="communitybikeshare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bikeshare.model.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BikeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communitybikeshare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bikeshare.model.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bikeshare.model.domain" />
+      <option name="MAIN_CLASS_NAME" value="org.bikeshare.model.domain.BikeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BikeTest.testValidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communitybikeshare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bikeshare.model.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bikeshare.model.domain" />
+      <option name="MAIN_CLASS_NAME" value="org.bikeshare.model.domain.BikeTest" />
+      <option name="METHOD_NAME" value="testValidate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaypointTest.validateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communitybikeshare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bikeshare.model.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bikeshare.model.domain" />
+      <option name="MAIN_CLASS_NAME" value="org.bikeshare.model.domain.WaypointTest" />
+      <option name="METHOD_NAME" value="validateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WaypointTest.validateTest" />
+        <item itemvalue="JUnit.BikeTest.testValidate" />
+        <item itemvalue="JUnit.BikeTest" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,5 +150,16 @@
       <updated>1698507737232</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
