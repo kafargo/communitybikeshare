@@ -2,17 +2,30 @@ package org.bikeshare.model.domain;
 
 import java.util.Objects;
 
-public class Customer {
+/**
+ * The Rider class creates a person who is intrested in checking out a bike.
+ * This class is light weight because these people do not pay for any service,
+ * rather is a lot like a library for bikes. accortingly, payment related information
+ * is not necessary.
+ * @author kevinfargo
+ */
+public class Rider {
 
     private String firstName;
     private String lastName;
     private String emailAddress;
-    //indicates if the customer has a bike in their possession
+
+    /**
+     * hasBike is a boolean that indicates if a customer has a bike or not.
+     * Per requirements, customers cannot have more than one bike at a time.
+     */
     private boolean hasBike;
     private Bike bike;
 
-    //Default constructor that includes all parameters of the object
-    public Customer(String firstName, String lastName, String emailAddress, boolean hasBike, Bike bike) {
+    /**
+     * Default constructor including all parameters of the class
+     */
+    public Rider(String firstName, String lastName, String emailAddress, boolean hasBike, Bike bike) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
@@ -20,8 +33,10 @@ public class Customer {
         this.bike = bike;
     }
 
-    //Overloaded constructor that would be used for creating a first time customer who could not have a bike by default
-    public Customer(String firstName, String lastName, String emailAddress) {
+    /**
+     * Constructor for first time customers which will not have a bike to start out.
+     */
+    public Rider(String firstName, String lastName, String emailAddress) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
@@ -60,31 +75,42 @@ public class Customer {
         return bike;
     }
 
-    public String takePossessionOfBike(Bike bike) {
+    /**
+     * Adds a bike to the rider as long as the rider does not already have a bike.
+     * Will return a boolean indicating if it was able to actually able to be added or not.
+     * @param  bike  a bike to be checked out by a rider
+     * @return      true if it was able to add the bike, and false if the bike could not be added
+     */
+    public boolean takePossessionOfBike(Bike bike) {
         if (!hasBike && bike.getBikeSerialNum() != "No Bike") {
             if(!bike.inUse()) {
                 this.bike = bike;
                 this.hasBike = true;
                 bike.checkOutBike();
-                return "You checked out " + bike;
+                return true;
             }
             else{
-                return "bike already in use";
+                return false;
             }
 
         }
-        else return "You cant check out a bike";
+        else return false;
     }
 
-    public String returnBike(Bike bike) {
+    /**
+     * Method to remove a bike from a rider and also reset their hasBike status.
+     * @param  bike  a bike to be returned by the rider
+     * @return      true if bike was successfully returned, and false if there was no bike to return
+     */
+    public boolean returnBike(Bike bike) {
         if (hasBike) {
             this.bike = null;
             this.hasBike = false;
             bike.checkInBike();
-            return "Bike Returned";
+            return true;
         }
         else{
-            return "No Bike to Return";
+            return false;
         }
     }
 
@@ -92,8 +118,8 @@ public class Customer {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Customer customer = (Customer) o;
-        return emailAddress.equals(customer.emailAddress);
+        Rider rider = (Rider) o;
+        return emailAddress.equals(rider.emailAddress);
     }
 
     @Override
@@ -101,7 +127,10 @@ public class Customer {
         return Objects.hash(emailAddress);
     }
 
-    //Validate class
+    /**
+     * This method is strictly for testing. It allows for a simple junit test to validate an instance of the class.
+     * @return      true if it was able to validate the class, and false otherwise
+     */
     public boolean validate() {
         if (lastName == null)
             return false;

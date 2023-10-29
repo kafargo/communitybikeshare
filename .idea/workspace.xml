@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
-      <change afterPath="$PROJECT_DIR$/design/Week2PassingTest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/Week2RunningApplication.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/~$rgo-Alex-Design-Doc.docx" afterDir="false" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="deleted trash">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Fargo-Alex-Design-Doc.docx" beforeDir="false" afterPath="$PROJECT_DIR$/design/Fargo-Alex-Design-Doc.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Bike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Rider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/TripComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/TripComposite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Waypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Waypoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698535043616</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated readme">
+      <created>1698538030225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698538030225</updated>
+    </task>
+    <task id="LOCAL-00003" summary="deleted trash">
+      <created>1698550090133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698550090133</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +203,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start." />
-    <option name="LAST_COMMIT_MESSAGE" value="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start." />
+    <MESSAGE value="updated readme" />
+    <MESSAGE value="deleted trash" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted trash" />
   </component>
 </project>

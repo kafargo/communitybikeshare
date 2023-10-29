@@ -2,6 +2,12 @@ package org.bikeshare.model.domain;
 
 import java.util.Objects;
 
+/**
+ * The Bike class creates an instance of a bike. Some key attributes here are the millage
+ * of the chain and tyres because these components need to be replaced often so the bike can
+ * remain in operation.
+ * @author kevinfargo
+ */
 public class Bike {
 
     private String bikeSerialNum;
@@ -9,13 +15,21 @@ public class Bike {
     private int frontTyreMillage;
     private int rearTyreMillage;
     private int chainMillage;
+    /**
+     * Indicates that the bike is in use.
+     */
     private boolean inUse;
+    /**
+     * Indicates that the bike is in need of maintenance.
+     */
     private boolean needsMaintenance;
     private String bikeType;
     private String bikeSize;
 
 
-    //default constructor
+    /**
+     * Default constructor
+     */
     public Bike(String bikeSerialNum, long totalMillage, int frontTyreMillage, int rearTyreMillage, int chainMillage, boolean inUse, boolean needsMaintenance, String bikeType, String bikeSize) {
         this.bikeSerialNum = bikeSerialNum;
         this.totalMillage = totalMillage;
@@ -28,7 +42,9 @@ public class Bike {
         this.bikeSize = bikeSize;
     }
 
-    //constructor for creating a 'defualt' bike
+    /**
+     * Constructor to create a dummy instance of a bike
+     */
     public Bike() {
         this.bikeSerialNum = "No Bike";
         this.totalMillage = 0;
@@ -41,7 +57,7 @@ public class Bike {
         this.bikeSize = "N/A";
     }
 
-    //getters and setters
+
     public String getBikeSerialNum() {
         return bikeSerialNum;
     }
@@ -74,9 +90,11 @@ public class Bike {
         return bikeSize;
     }
 
-
-    //other special methods
-
+    /**
+     * Method to add miles from a trip to a bike and update all the key components with the millage.
+     * @param  miles  the miles that the rider put on the bike while it was checked out.
+     * @return a string that shows the total millage plus the millage of the tyres and chain (which may be different)
+     */
     public String addTripMiles(int miles){
         this.totalMillage += miles;
         this.chainMillage  += miles;

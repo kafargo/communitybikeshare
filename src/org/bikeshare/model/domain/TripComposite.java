@@ -3,7 +3,7 @@ package org.bikeshare.model.domain;
 public class TripComposite {
 
     private Bike bike;
-    private Customer customer;
+    private Rider rider;
     private Waypoint waypoint;
 
     public Bike getBike() {
@@ -14,12 +14,12 @@ public class TripComposite {
         this.bike = bike;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Rider getCustomer() {
+        return rider;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setCustomer(Rider rider) {
+        this.rider = rider;
     }
 
     public Waypoint getWaypoint() {
@@ -29,4 +29,19 @@ public class TripComposite {
     public void setWaypoint(Waypoint waypoint) {
         this.waypoint = waypoint;
     }
+
+    @Override
+    public String toString()
+    {
+        StringBuffer strBfr = new StringBuffer();
+        strBfr.append("Bike :");
+        strBfr.append(bike);
+        strBfr.append("\nWaypoint :");
+        strBfr.append(waypoint);
+        strBfr.append("\nCustomer :");
+        strBfr.append(rider);
+
+        return strBfr.toString();
+    }
+
 }
