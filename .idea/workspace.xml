@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Bike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/TripComposite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Waypoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/domain/BikeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/domain/WaypointTest.java" afterDir="false" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
+      <change afterPath="$PROJECT_DIR$/design/Week2PassingTest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/Week2RunningApplication.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/~$rgo-Alex-Design-Doc.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/communitybikeshare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/communitybikeshare.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d3ef4c40-3eb1-4b95-9d7b-1f4926ad4109" />
+        <option name="url" value="https://github.com/kafargo/communitybikeshare.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -59,7 +66,8 @@
     "jdk.selected.JAVA_MODULE": "1.8",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -149,6 +157,14 @@
       <option name="presentableId" value="Default" />
       <updated>1698507737232</updated>
     </task>
+    <task id="LOCAL-00001" summary="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
+      <created>1698535043616</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698535043616</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,10 +172,21 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start." />
+    <option name="LAST_COMMIT_MESSAGE" value="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start." />
   </component>
 </project>
