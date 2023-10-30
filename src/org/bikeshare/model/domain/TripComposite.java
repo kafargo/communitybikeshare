@@ -14,11 +14,11 @@ public class TripComposite {
         this.bike = bike;
     }
 
-    public Rider getCustomer() {
+    public Rider getRider() {
         return rider;
     }
 
-    public void setCustomer(Rider rider) {
+    public void setRider(Rider rider) {
         this.rider = rider;
     }
 
@@ -38,7 +38,7 @@ public class TripComposite {
         strBfr.append(bike);
         strBfr.append("\nWaypoint :");
         strBfr.append(waypoint);
-        strBfr.append("\nCustomer :");
+        strBfr.append("\nRider :");
         strBfr.append(rider);
 
         return strBfr.toString();

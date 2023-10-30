@@ -23,6 +23,9 @@ public class Bike {
      * Indicates that the bike is in need of maintenance.
      */
     private boolean needsMaintenance;
+    /**
+     * Bike types and sizes cannot ever be changed, and are enums
+     */
     private final BikeType bikeType;
     private final BikeSize bikeSize;
 

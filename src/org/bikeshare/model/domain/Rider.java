@@ -145,7 +145,7 @@ public class Rider {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Rider{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
