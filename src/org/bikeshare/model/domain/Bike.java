@@ -23,14 +23,14 @@ public class Bike {
      * Indicates that the bike is in need of maintenance.
      */
     private boolean needsMaintenance;
-    private String bikeType;
-    private String bikeSize;
+    private final BikeType bikeType;
+    private final BikeSize bikeSize;
 
 
     /**
      * Default constructor
      */
-    public Bike(String bikeSerialNum, long totalMillage, int frontTyreMillage, int rearTyreMillage, int chainMillage, boolean inUse, boolean needsMaintenance, String bikeType, String bikeSize) {
+    public Bike(String bikeSerialNum, long totalMillage, int frontTyreMillage, int rearTyreMillage, int chainMillage, boolean inUse, boolean needsMaintenance, BikeType bikeType, BikeSize bikeSize) {
         this.bikeSerialNum = bikeSerialNum;
         this.totalMillage = totalMillage;
         this.frontTyreMillage = frontTyreMillage;
@@ -53,8 +53,8 @@ public class Bike {
         this.chainMillage = 0;
         this.inUse = false;
         this.needsMaintenance = false;
-        this.bikeType = "N/A";
-        this.bikeSize = "N/A";
+        this.bikeType = BikeType.ROAD;
+        this.bikeSize = BikeSize.SMALL;
     }
 
 
@@ -82,11 +82,11 @@ public class Bike {
         return chainMillage;
     }
 
-    public String getBikeType() {
+    public BikeType getBikeType() {
         return bikeType;
     }
 
-    public String getBikeSize() {
+    public BikeSize getBikeSize() {
         return bikeSize;
     }
 
@@ -100,6 +100,15 @@ public class Bike {
         this.chainMillage  += miles;
         this.frontTyreMillage += miles;
         this.rearTyreMillage += miles;
+        if (this.chainMillage > 500){
+            this.needsMaintenance = true;
+        }
+        else if (this.frontTyreMillage > 1000){
+            this.needsMaintenance = true;
+        }
+        else if (this.rearTyreMillage > 1000){
+            this.needsMaintenance = true;
+        }
         return "Bike " + this.bikeSerialNum + " now has " + this.totalMillage + " total miles | " + this.chainMillage + " miles on the chain | " + this.frontTyreMillage + " miles on the front tyre | " + this.rearTyreMillage + " miles on the rear tyre";
     }
 

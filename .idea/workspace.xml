@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="deleted trash">
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Added comments to all custom components. Aslo updated the Design Doc.">
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/BikeSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/BikeType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Fargo-Alex-Design-Doc.docx" beforeDir="false" afterPath="$PROJECT_DIR$/design/Fargo-Alex-Design-Doc.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Rider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/TripComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/TripComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Waypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Waypoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698550090133</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added comments to all custom components. Aslo updated the Design Doc.">
+      <created>1698599828645</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698599828645</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +211,7 @@
     <MESSAGE value="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start." />
     <MESSAGE value="updated readme" />
     <MESSAGE value="deleted trash" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted trash" />
+    <MESSAGE value="Added comments to all custom components. Aslo updated the Design Doc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments to all custom components. Aslo updated the Design Doc." />
   </component>
 </project>
