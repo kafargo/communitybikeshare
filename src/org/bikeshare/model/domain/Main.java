@@ -6,8 +6,8 @@ package org.bikeshare.model.domain;
 public class Main {
     public static void main(String[] args) {
 
-        Bike canyonGrail = new Bike("abc", 999999999, 100, 100, 100, false, false, BikeType.CRUISER, BikeSize.SMALL);
-        Rider alex = new Rider("Alex", "Fargo", "test@tester.com");
+        Bike canyonGrail = new Bike("abc", 2000, 100, 100, 100, false, false, BikeType.CRUISER, BikeSize.SMALL);
+        Rider alex = new Rider("Alex", "Fargo", "test@tester.com", "pass567");
         Waypoint main = new Waypoint("main street", 12.45, 67.113,"COS", 7);
 
         System.out.println(canyonGrail);

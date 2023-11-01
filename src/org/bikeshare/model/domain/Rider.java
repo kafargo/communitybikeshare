@@ -14,6 +14,7 @@ public class Rider {
     private String firstName;
     private String lastName;
     private String emailAddress;
+    private String password;
 
     /**
      * hasBike is a boolean that indicates if a customer has a bike or not.
@@ -36,11 +37,21 @@ public class Rider {
     /**
      * Constructor for first time customers which will not have a bike to start out.
      */
-    public Rider(String firstName, String lastName, String emailAddress) {
+    public Rider(String firstName, String lastName, String emailAddress, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
         this.hasBike = false;
+        this.password = password;
+    }
+
+    /**
+     * Constructor for when a user logins in
+     */
+    public Rider(String emailAddress, String password) {
+        this.emailAddress = emailAddress;
+        this.hasBike = false;
+        this.password = password;
     }
 
     public String getFirstName() {
@@ -69,6 +80,14 @@ public class Rider {
 
     public boolean getHasBike() {
         return hasBike;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Bike getCustomerBike() {
