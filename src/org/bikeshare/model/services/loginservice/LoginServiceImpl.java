@@ -7,7 +7,7 @@ public class LoginServiceImpl implements ILoginService {
 
     /**
      * Validates if the riders password matches the password in the DB
-     *  @param Rider contains rider's login credentials
+     *  @param rider contains rider's login credentials
      */
 
     public boolean authenticateRider(Rider rider) {
@@ -27,14 +27,5 @@ public class LoginServiceImpl implements ILoginService {
 
         return rider.getPassword().equals(dbPass);
     }
-
-    public static void main(String[] args){
-
-        LoginServiceImpl login = new LoginServiceImpl();
-        Rider bill = new Rider("test@test.com", "test123");
-        System.out.println(login.authenticateRider(bill));
-
-    }
-
 
 }

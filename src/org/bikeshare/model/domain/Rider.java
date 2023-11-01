@@ -4,7 +4,7 @@ import java.util.Objects;
 
 /**
  * The Rider class creates a person who is intrested in checking out a bike.
- * This class is light weight because these people do not pay for any service,
+ * This class is lightweight because these people do not pay for any service,
  * rather is a lot like a library for bikes. accortingly, payment related information
  * is not necessary.
  * @author kevinfargo
@@ -46,7 +46,7 @@ public class Rider {
     }
 
     /**
-     * Constructor for when a user logins in
+     * Constructor for when a user logs in
      */
     public Rider(String emailAddress, String password) {
         this.emailAddress = emailAddress;

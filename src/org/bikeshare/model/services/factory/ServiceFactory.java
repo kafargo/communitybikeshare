@@ -2,6 +2,8 @@ package org.bikeshare.model.services.factory;
 
 import org.bikeshare.model.services.loginservice.ILoginService;
 import org.bikeshare.model.services.loginservice.LoginServiceImpl;
+import org.bikeshare.model.services.riderbikestatusservice.IRiderBikeStatusService;
+import org.bikeshare.model.services.riderbikestatusservice.RiderBikeStatusServiceImpl;
 
 public class ServiceFactory {
 
@@ -13,5 +15,6 @@ public class ServiceFactory {
         {
             return new LoginServiceImpl();
         }
+        public IRiderBikeStatusService getRiderBikeStatusService() {return new RiderBikeStatusServiceImpl();}
 
 }

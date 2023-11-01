@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Updated the Rider to places it was missing">
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/factory/ServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/loginservice/ILoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/loginservice/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Added a new service and tests">
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/riderbikestatusservice/IRiderBikeStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/riderbikestatusservice/RiderBikeStatusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/services/factory/ServiceFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/services/loginservice/RiderBikeStatusServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/communitybikeshare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/communitybikeshare.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Rider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Rider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/services/factory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/factory/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/services/loginservice/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/loginservice/LoginServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,6 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "git-widget-placeholder": "Week-3",
@@ -87,7 +86,7 @@
       <recent name="org.bikeshare.model.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoginServiceImpl">
+  <component name="RunManager">
     <configuration name="LoginServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.bikeshare.model.services.loginservice.LoginServiceImpl" />
       <module name="communitybikeshare" />
@@ -229,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698637511479</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Services that connect to a MySQL DB">
+      <option name="closed" value="true" />
+      <created>1698811696689</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698811696689</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +264,9 @@
     <MESSAGE value="Added comments to all custom components. Aslo updated the Design Doc." />
     <MESSAGE value="made the bike size and type enums" />
     <MESSAGE value="Updated the Rider to places it was missing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Rider to places it was missing" />
+    <MESSAGE value="Added Services that connect to a MySQL DB" />
+    <MESSAGE value="Added a new service and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new service and tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
