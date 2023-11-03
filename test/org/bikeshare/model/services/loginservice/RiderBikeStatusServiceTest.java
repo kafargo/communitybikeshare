@@ -1,32 +1,71 @@
 package org.bikeshare.model.services.loginservice;
 
 import org.bikeshare.model.domain.Bike;
+import org.bikeshare.model.domain.BikeSize;
+import org.bikeshare.model.domain.BikeType;
 import org.bikeshare.model.domain.Rider;
-import org.bikeshare.model.services.riderbikestatusservice.RiderBikeStatusServiceImpl;
+import org.bikeshare.model.services.riderbikestatusservice.RiderServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class RiderBikeStatusServiceTest {
 
-        Rider rider;
-        RiderBikeStatusServiceImpl bikeStatusService;
+        Rider riderWithBike;
+        Rider riderWithoutBike;
+        Bike testBike;
+        RiderServiceImpl riderService;
 
-        @Before
+    /**
+     * void assertEquals(boolean expected,boolean actual): checks that two primitives/objects are equal. It is overloaded.
+     * void assertTrue(boolean condition): checks that a condition is true.
+     * void assertFalse(boolean condition): checks that a condition is false.
+     * void assertNull(Object obj): checks that object is null.
+     * void assertNotNull(Object obj): checks that object is not null.
+     */
+
+
+    @Before
         public void setUp() throws Exception {
-            rider = new Rider("guy","withbike","test@test.com",true,new Bike());
-            bikeStatusService = new RiderBikeStatusServiceImpl();
+
+            testBike = new Bike("abc", 2000, 100, 100, 100, false, false, BikeType.CRUISER, BikeSize.SMALL);
+            riderWithBike = new Rider("Yes", "Bike", "test@tester.com", true, testBike);
+            riderWithoutBike = new Rider("No", "Bike", "test@testme.com", "test");
+            riderService = new RiderServiceImpl();
         }
 
         /**
-         * The service is not really going to work right now because it checks the database not the actuall class values
+         * The service is not really going to work right now because it checks the database not the actuall class values.
+         * I need to research how to mock a DB connection for this first test
          */
         @Test
-        public void testRiderBikeStatusServiceResult() {
-            assertFalse(bikeStatusService.checkIfRiderHasBike(rider));
+        public void testRiderServiceBikeStatusResult() {
+            assertFalse(riderService.checkIfRiderHasBike(riderWithBike));
         }
+
+        /**
+         * The below test will actually work because there is no DB to work against
+         */
+        @Test
+        public void testRiderServiceAddBikeToRider() {
+            assertEquals(true,riderService.addBikeToRider(riderWithoutBike, testBike));
+            assertEquals(false,riderService.addBikeToRider(riderWithBike, testBike));
+        }
+
+        @Test
+        public void testRiderServiceReturnRidersBike() {
+            assertEquals(false,riderService.returnRidersBike(riderWithoutBike));
+            assertEquals(true,riderService.returnRidersBike(riderWithBike));
+        }
+
+        @Test
+        public void testRiderServiceUpdateRiderName() {
+            riderService.updateRiderName("real", "name", riderWithoutBike);
+            assertEquals("real",riderWithoutBike.getFirstName());
+            assertEquals("name",riderWithoutBike.getLastName());
+        }
+
 
     }
 

@@ -1,8 +1,8 @@
 package org.bikeshare.model.services.factory;
 
 import org.bikeshare.model.domain.Bike;
-import org.bikeshare.model.services.riderbikestatusservice.IRiderBikeStatusService;
-import org.bikeshare.model.services.riderbikestatusservice.RiderBikeStatusServiceImpl;
+import org.bikeshare.model.services.riderbikestatusservice.IRiderService;
+import org.bikeshare.model.services.riderbikestatusservice.RiderServiceImpl;
 import org.bikeshare.model.services.loginservice.*;
 import org.bikeshare.model.domain.Rider;
 import org.junit.Before;
@@ -35,14 +35,14 @@ import static org.junit.Assert.assertTrue;
 
         @Test
         public void testGetRiderHasBikeService() {
-            IRiderBikeStatusService riderHasBikeService = (IRiderBikeStatusService) serviceFactory.getRiderBikeStatusService();
-            assertTrue(riderHasBikeService instanceof RiderBikeStatusServiceImpl);
+            IRiderService riderHasBikeService = (IRiderService) serviceFactory.getRiderService();
+            assertTrue(riderHasBikeService instanceof RiderServiceImpl);
         }
 
         @Test
         public void testRiderHasBikeServiceResult() {
-            IRiderBikeStatusService riderHasBikeService = (IRiderBikeStatusService) serviceFactory.getRiderBikeStatusService();
-            assertTrue(riderHasBikeService instanceof RiderBikeStatusServiceImpl);
+            IRiderService riderHasBikeService = (IRiderService) serviceFactory.getRiderService();
+            assertTrue(riderHasBikeService instanceof RiderServiceImpl);
         }
     }
 
