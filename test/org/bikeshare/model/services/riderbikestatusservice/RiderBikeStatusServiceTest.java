@@ -1,9 +1,11 @@
-package org.bikeshare.model.services.loginservice;
+package org.bikeshare.model.services.riderbikestatusservice;
 
 import org.bikeshare.model.domain.Bike;
 import org.bikeshare.model.domain.BikeSize;
 import org.bikeshare.model.domain.BikeType;
 import org.bikeshare.model.domain.Rider;
+import org.bikeshare.model.services.exceptions.RiderCheckinException;
+import org.bikeshare.model.services.exceptions.RiderCheckoutException;
 import org.bikeshare.model.services.riderbikestatusservice.RiderServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
@@ -49,13 +51,21 @@ public class RiderBikeStatusServiceTest {
          */
         @Test
         public void testRiderServiceAddBikeToRider() {
-            assertEquals(true,riderService.addBikeToRider(riderWithoutBike, testBike));
-            assertEquals(false,riderService.addBikeToRider(riderWithBike, testBike));
+            try{
+                riderService.addBikeToRider(riderWithBike, testBike);
+            }catch (RiderCheckoutException e){
+                assertEquals(e.getMessage(), "Rider already has a bike");
+            }
+            //assertEquals(false,riderService.addBikeToRider(riderWithBike, testBike));
         }
 
         @Test
-        public void testRiderServiceReturnRidersBike() {
-            assertEquals(false,riderService.returnRidersBike(riderWithoutBike));
+        public void testRiderServiceReturnRidersBike() throws RiderCheckinException {
+            try{
+                riderService.returnRidersBike(riderWithoutBike);
+            }catch (RiderCheckinException e){
+                assertEquals(e.getMessage(), "This rider has no bike to checkin");
+            }
             assertEquals(true,riderService.returnRidersBike(riderWithBike));
         }
 

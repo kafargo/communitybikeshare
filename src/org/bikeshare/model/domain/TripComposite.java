@@ -1,7 +1,10 @@
 package org.bikeshare.model.domain;
 
-public class TripComposite {
+import java.io.Serializable;
 
+public class TripComposite implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private Bike bike;
     private Rider rider;
     private Waypoint waypoint;

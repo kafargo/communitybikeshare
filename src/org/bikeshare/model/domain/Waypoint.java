@@ -1,5 +1,6 @@
 package org.bikeshare.model.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
@@ -11,8 +12,9 @@ import java.util.Objects;
  * actual address.
  * @author kevinfargo
  */
-public class Waypoint {
+public class Waypoint implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private String name;
     private double latitudeDecimalDegree;
     private double longitudeDecimalDegree;

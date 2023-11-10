@@ -1,5 +1,6 @@
 package org.bikeshare.model.domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -9,8 +10,9 @@ import java.util.Objects;
  * is not necessary.
  * @author kevinfargo
  */
-public class Rider {
+public class Rider implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private String firstName;
     private String lastName;
     private String emailAddress;

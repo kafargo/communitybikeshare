@@ -2,11 +2,9 @@ package org.bikeshare.model.services.riderbikestatusservice;
 
 import org.bikeshare.model.domain.Bike;
 import org.bikeshare.model.domain.Rider;
+import org.bikeshare.model.services.exceptions.RiderCheckinException;
+import org.bikeshare.model.services.exceptions.RiderCheckoutException;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 
 public class RiderServiceImpl implements IRiderService {
 
@@ -16,21 +14,7 @@ public class RiderServiceImpl implements IRiderService {
      */
     @Override
     public boolean checkIfRiderHasBike(Rider rider){
-        final String DATABASE_URL = "jdbc:mysql://localhost:3306/BikeShareDB";
-        final String USER = "BikeShareApp";
-        final String PASSWORD = "Test123";
-        int bikeStatus = 2;
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con= DriverManager.getConnection(DATABASE_URL,USER,PASSWORD);
-            Statement stmt=con.createStatement();
-            ResultSet rs=stmt.executeQuery("SELECT HasBike FROM Rider WHERE Email = '" + rider.getEmailAddress() +"';");
-            while(rs.next())
-                bikeStatus = rs.getInt(1);
-            con.close();
-        }catch(Exception e){ System.out.println(e);}
-
-        return (bikeStatus == 1);
+        return rider.getHasBike();
     }
 
     /**
@@ -40,12 +24,12 @@ public class RiderServiceImpl implements IRiderService {
      * @return boolean which represents if it succeeded or not
      */
     @Override
-    public boolean addBikeToRider(Rider rider, Bike bike) {
+    public boolean addBikeToRider(Rider rider, Bike bike) throws RiderCheckoutException {
         if(!rider.getHasBike()){
             rider.takePossessionOfBike(bike);
             return true;
         }
-        else return false;
+        else throw new RiderCheckoutException("Rider already has a bike");
     }
 
     /**
@@ -54,12 +38,14 @@ public class RiderServiceImpl implements IRiderService {
      * @return boolean which represents if it succeeded or not
      */
     @Override
-    public boolean returnRidersBike(Rider rider) {
+    public boolean returnRidersBike(Rider rider) throws RiderCheckinException {
         if(rider.getHasBike()){
             rider.returnBike(rider.getBike());
             return true;
         }
-        else return false;
+        else{
+            throw new RiderCheckinException("This rider has no bike to checkin");
+        }
     }
 
     /**

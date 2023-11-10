@@ -1,5 +1,6 @@
 package org.bikeshare.model.domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -8,8 +9,9 @@ import java.util.Objects;
  * remain in operation.
  * @author kevinfargo
  */
-public class Bike {
+public class Bike implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private String bikeSerialNum;
     private long totalMillage;
     private int frontTyreMillage;
@@ -91,6 +93,14 @@ public class Bike {
 
     public BikeSize getBikeSize() {
         return bikeSize;
+    }
+
+    public boolean isNeedsMaintenance() {
+        return needsMaintenance;
+    }
+
+    public void setNeedsMaintenance(boolean needsMaintenance) {
+        this.needsMaintenance = needsMaintenance;
     }
 
     /**

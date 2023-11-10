@@ -1,12 +1,15 @@
 package org.bikeshare.model.services.factory;
 
 import org.bikeshare.model.domain.Bike;
+import org.bikeshare.model.services.IService;
+import org.bikeshare.model.business.exception.ServiceLoadException;
 import org.bikeshare.model.services.riderbikestatusservice.IRiderService;
 import org.bikeshare.model.services.riderbikestatusservice.RiderServiceImpl;
 import org.bikeshare.model.services.loginservice.*;
 import org.bikeshare.model.domain.Rider;
 import org.junit.Before;
 import org.junit.Test;
+import static org.bikeshare.model.services.factory.ServiceFactory.getInstance;
 
 import static org.junit.Assert.assertTrue;
 
@@ -19,7 +22,7 @@ import static org.junit.Assert.assertTrue;
 
         @Before
         public void setUp() throws Exception {
-            serviceFactory = new ServiceFactory();
+            serviceFactory = getInstance();
             rider = new Rider("guy","withbike","test@testme.com",true,new Bike());
         }
 
@@ -28,22 +31,17 @@ import static org.junit.Assert.assertTrue;
          * checking if the service implementations are implementations of the Interface
          */
         @Test
-        public void testGetLoginService() {
-            ILoginService loginService = (ILoginService)serviceFactory.getLoginService();
+        public void testGetLoginService() throws ServiceLoadException {
+            ILoginService loginService = (ILoginService)serviceFactory.getService("ILoginService");
             assertTrue(loginService instanceof LoginServiceImpl);
         }
 
         @Test
-        public void testGetRiderHasBikeService() {
-            IRiderService riderHasBikeService = (IRiderService) serviceFactory.getRiderService();
+        public void testGetRiderHasBikeService() throws ServiceLoadException {
+            IRiderService riderHasBikeService = (IRiderService) serviceFactory.getService("IRiderService");
             assertTrue(riderHasBikeService instanceof RiderServiceImpl);
         }
 
-        @Test
-        public void testRiderHasBikeServiceResult() {
-            IRiderService riderHasBikeService = (IRiderService) serviceFactory.getRiderService();
-            assertTrue(riderHasBikeService instanceof RiderServiceImpl);
-        }
     }
 
 
