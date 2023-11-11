@@ -1,15 +1,18 @@
 package org.bikeshare.model.services.riderbikestatusservice;
 
+import org.bikeshare.model.business.exception.ServiceLoadException;
 import org.bikeshare.model.domain.Bike;
 import org.bikeshare.model.domain.BikeSize;
 import org.bikeshare.model.domain.BikeType;
 import org.bikeshare.model.domain.Rider;
 import org.bikeshare.model.services.exceptions.RiderCheckinException;
 import org.bikeshare.model.services.exceptions.RiderCheckoutException;
+import org.bikeshare.model.services.factory.ServiceFactory;
 import org.bikeshare.model.services.riderbikestatusservice.RiderServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.bikeshare.model.services.factory.ServiceFactory.*;
 import static org.junit.Assert.*;
 
 public class RiderBikeStatusServiceTest {
@@ -35,6 +38,7 @@ public class RiderBikeStatusServiceTest {
             riderWithBike = new Rider("Yes", "Bike", "test@tester.com", true, testBike);
             riderWithoutBike = new Rider("No", "Bike", "test@testme.com", "test");
             riderService = new RiderServiceImpl();
+
         }
 
         /**
@@ -43,7 +47,7 @@ public class RiderBikeStatusServiceTest {
          */
         @Test
         public void testRiderServiceBikeStatusResult() {
-            assertFalse(riderService.checkIfRiderHasBike(riderWithBike));
+            assertTrue(riderService.checkIfRiderHasBike(riderWithBike));
         }
 
         /**
@@ -76,6 +80,30 @@ public class RiderBikeStatusServiceTest {
             assertEquals("name",riderWithoutBike.getLastName());
         }
 
+        @Test
+        public void testRiderService() {
+
+            //
+            // USE THIS APPROOACH OF CASTING TO AN INTERFACE
+            //
+            // Here we are casting Factory output to IRiderService, which
+            // means that riderService will only see methods declared in
+            // the interface and implemented by RiderServiceImpl
+            //
+            IRiderService riderService;
+            ServiceFactory serviceFactory = ServiceFactory.getInstance();
+
+            try {
+                riderService = (IRiderService) serviceFactory.getService(IRiderService.NAME);
+                assertTrue(riderService instanceof RiderServiceImpl);
+                System.out.println(riderService);
+            } catch (ServiceLoadException e) {
+                System.out.println(e);
+            }
+
+        }
+
 
     }
+
 

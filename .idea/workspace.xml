@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Week 4 updated README.md">
-      <change afterPath="$PROJECT_DIR$/design/UseCaseDiagram.png" afterDir="false" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Week 4 finishing touches on this weeks assignment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Fargo-Alex-Design-Doc.docx" beforeDir="false" afterPath="$PROJECT_DIR$/design/Fargo-Alex-Design-Doc.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/MainDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/MainDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/services/factory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/factory/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/bikeshare/model/services/factory/ServiceFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/bikeshare/model/services/factory/ServiceFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/bikeshare/model/services/riderbikestatusservice/RiderBikeStatusServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/bikeshare/model/services/riderbikestatusservice/RiderBikeStatusServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,22 +112,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BikeTest.testValidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="communitybikeshare" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.bikeshare.model.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.bikeshare.model.domain" />
-      <option name="MAIN_CLASS_NAME" value="org.bikeshare.model.domain.BikeTest" />
-      <option name="METHOD_NAME" value="testValidate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RiderBikeStatusServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communitybikeshare" />
       <extension name="coverage">
@@ -142,6 +123,22 @@
       <option name="PACKAGE_NAME" value="org.bikeshare.model.services.loginservice" />
       <option name="MAIN_CLASS_NAME" value="org.bikeshare.model.services.loginservice.RiderBikeStatusServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RiderBikeStatusServiceTest.testRiderServiceBikeStatusResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communitybikeshare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bikeshare.model.services.riderbikestatusservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bikeshare.model.services.riderbikestatusservice" />
+      <option name="MAIN_CLASS_NAME" value="org.bikeshare.model.services.riderbikestatusservice.RiderBikeStatusServiceTest" />
+      <option name="METHOD_NAME" value="testRiderServiceBikeStatusResult" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RiderBikeStatusServiceTest.testRiderServiceBikeStatusResult" />
         <item itemvalue="JUnit.RiderBikeStatusServiceTest" />
         <item itemvalue="Application.LoginServiceImpl" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.WaypointTest.validateTest" />
-        <item itemvalue="JUnit.BikeTest.testValidate" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699639476726</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Week 4 finishing touches on this weeks assignment">
+      <option name="closed" value="true" />
+      <created>1699721764116</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699721764116</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,7 +326,8 @@
     <MESSAGE value="Week 4 Added another service, added exceptions, updated the factory, added a property file" />
     <MESSAGE value="Week 4 updated main Driver" />
     <MESSAGE value="Week 4 updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 4 updated README.md" />
+    <MESSAGE value="Week 4 finishing touches on this weeks assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 4 finishing touches on this weeks assignment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
