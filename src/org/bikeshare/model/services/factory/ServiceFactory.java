@@ -11,8 +11,8 @@ import org.bikeshare.model.services.IService;
  * Important to note here that all Service classes
  * (org.bikeshare.model.services.*) implement IService interface.
  *
- * Hence, the getService method when done, instead of returning ILoginService or
- * IRegistrationService it returns a IService interface class which continues
+ * Hence, the getService method when done, instead of returning IRiderService
+ * it returns a IService interface class which continues
  * the decoupling theme of MVC so the calling classes don't deal with a concrete
  * implementation class but its interface.
  *
@@ -24,10 +24,10 @@ import org.bikeshare.model.services.IService;
 
 public class ServiceFactory {
 
-        // Next three lines part of the Singleton Pattern.
-        // Read article on Singleton Pattern issues:
-        // http://www.ibm.com/developerworks/java/library/j-dcl.html
-        private ServiceFactory() {
+    /**
+     * This is a singleton https://www.geeksforgeeks.org/singleton-class-java/
+     */
+    private ServiceFactory() {
         }
 
         private static ServiceFactory serviceFactory = new ServiceFactory();
@@ -65,40 +65,6 @@ public class ServiceFactory {
 
             java.util.Properties props = new java.util.Properties();
 
-            // Hard coding path of the file is restrictive because if the file
-            // is renamed or
-            // moved, one has to remember to update it here.
-            //
-            // More appropriate approach is to pass this as a System property (-D
-            // option)
-            // at application startup time.
-            //
-            // Student Exercise: Research and all -D option in your HW
-            //
-            // Hint(actually more like a solution) :
-            //
-            // If running in Eclipse
-            // =====================
-            //
-            // Right click on the unit test and navigate to
-            // 1. Run As -> Run Configuration
-            // 2. Select Arguments Tab
-            // 3. In VM Arguments section, add the -D property
-            // -Dprop_location=<drive><location>\application.properties
-            // Example:
-            // -Dprop_location=E:\FleetRental\config\application.properties
-            //
-            // If running on command line
-            // ==========================
-            // You'd pass in the above -D option with the java command.
-
-            /*
-             * java.io.FileInputStream fis = new java.io.FileInputStream(
-             * "C:\\EDrive\\Regis\\MSCS670\\NewCourse\\NewCourseSoftwareInstall\\ganymede\\eclipse_workspace\\FleetRental_Week4\\config\\application.properties"
-             * );
-             */
-
-            //String propertyFileLocation = System.getProperty("config/application.properties");
             String propertyFileLocation = "config/application.properties";
 
             System.out.println("Property File Location passed : " + propertyFileLocation);

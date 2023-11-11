@@ -11,7 +11,7 @@ import static org.bikeshare.model.services.factory.ServiceFactory.getInstance;
 
 public class MainDriver {
 
-    public static void main(String[] args) throws ServiceLoadException {
+    public static void main(String[] args){
 
         Bike canyonGrail = new Bike("abc", 2000, 100, 100, 100, false, false, BikeType.CRUISER, BikeSize.SMALL);
         Rider alex = new Rider("Alex", "Fargo", "test@tester.com", true, canyonGrail);
@@ -24,8 +24,13 @@ public class MainDriver {
         System.out.println(riderservice.updateRiderName("Jordan", "Peaks", alex));
         System.out.println(alex);
 
-        serviceFactory = getInstance();
-        System.out.println(serviceFactory.getService("IRiderService").toString());
+        try {
+            serviceFactory = getInstance();
+            System.out.println(serviceFactory.getService("IRiderService").toString());
+        }
+        catch(ServiceLoadException e){
+            System.out.println(e);
+        }
 
     }
 }
