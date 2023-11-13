@@ -8,11 +8,11 @@ import org.bikeshare.model.domain.Rider;
 import org.bikeshare.model.services.exceptions.RiderCheckinException;
 import org.bikeshare.model.services.exceptions.RiderCheckoutException;
 import org.bikeshare.model.services.factory.ServiceFactory;
-import org.bikeshare.model.services.riderbikestatusservice.RiderServiceImpl;
+import org.bikeshare.model.services.riderservice.IRiderService;
+import org.bikeshare.model.services.riderservice.RiderServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.bikeshare.model.services.factory.ServiceFactory.*;
 import static org.junit.Assert.*;
 
 public class RiderBikeStatusServiceTest {
@@ -32,7 +32,7 @@ public class RiderBikeStatusServiceTest {
 
 
     @Before
-        public void setUp() throws Exception {
+        public void setUp() {
 
             testBike = new Bike("abc", 2000, 100, 100, 100, false, false, BikeType.CRUISER, BikeSize.SMALL);
             riderWithBike = new Rider("Yes", "Bike", "test@tester.com", true, testBike);
@@ -42,17 +42,13 @@ public class RiderBikeStatusServiceTest {
         }
 
         /**
-         * The service is not really going to work right now because it checks the database not the actuall class values.
-         * I need to research how to mock a DB connection for this first test
+         * Various tests for the RiderService
          */
         @Test
         public void testRiderServiceBikeStatusResult() {
             assertTrue(riderService.checkIfRiderHasBike(riderWithBike));
         }
 
-        /**
-         * The below test will actually work because there is no DB to work against
-         */
         @Test
         public void testRiderServiceAddBikeToRider() {
             try{

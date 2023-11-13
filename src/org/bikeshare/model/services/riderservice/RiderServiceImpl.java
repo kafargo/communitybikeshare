@@ -1,4 +1,4 @@
-package org.bikeshare.model.services.riderbikestatusservice;
+package org.bikeshare.model.services.riderservice;
 
 import org.bikeshare.model.domain.Bike;
 import org.bikeshare.model.domain.Rider;

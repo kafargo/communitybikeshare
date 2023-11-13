@@ -5,8 +5,8 @@ import org.bikeshare.model.domain.Bike;
 import org.bikeshare.model.domain.Rider;
 import org.bikeshare.model.services.loginservice.ILoginService;
 import org.bikeshare.model.services.loginservice.LoginServiceImpl;
-import org.bikeshare.model.services.riderbikestatusservice.IRiderService;
-import org.bikeshare.model.services.riderbikestatusservice.RiderServiceImpl;
+import org.bikeshare.model.services.riderservice.IRiderService;
+import org.bikeshare.model.services.riderservice.RiderServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -34,7 +34,7 @@ public class ServiceFactoryTest {
         public void testGetRiderHasBikeService() {
             IRiderService riderHasBikeService = null;
             try {
-                riderHasBikeService = (IRiderService) serviceFactory.getService("IRiderService");
+                riderHasBikeService = (IRiderService) serviceFactory.getService(IRiderService.NAME);
             } catch (ServiceLoadException e) {
                 throw new RuntimeException(e);
             }
