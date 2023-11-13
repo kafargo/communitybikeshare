@@ -3,6 +3,7 @@ package org.bikeshare.model.business;
 import org.bikeshare.model.business.exception.ServiceLoadException;
 import org.bikeshare.model.domain.*;
 import org.bikeshare.model.services.factory.ServiceFactory;
+import org.bikeshare.model.services.loginservice.ILoginService;
 import org.bikeshare.model.services.riderbikestatusservice.IRiderService;
 import org.bikeshare.model.services.riderbikestatusservice.RiderServiceImpl;
 
@@ -24,9 +25,12 @@ public class MainDriver {
         System.out.println(riderservice.updateRiderName("Jordan", "Peaks", alex));
         System.out.println(alex);
 
+        serviceFactory = ServiceFactory.getInstance();
+        IRiderService riderService;
+
         try {
-            serviceFactory = getInstance();
-            System.out.println(serviceFactory.getService("IRiderService").toString());
+            riderService = (IRiderService)serviceFactory.getService(IRiderService.NAME);
+            System.out.println(riderService.toString());
         }
         catch(ServiceLoadException e){
             System.out.println(e);
