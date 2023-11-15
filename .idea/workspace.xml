@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Way too big to be a commit, I will do better next time">
-      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/business/AllBusinessTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/business/manager/BikeShareManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/TestMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/BikeShareManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/BikeShareManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Rider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Rider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ApplicationTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ApplicationTestSuite.java" afterDir="false" />
-    </list>
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Updated the Test Suite" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +196,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698507737232</updated>
-      <workItem from="1699909869753" duration="33483000" />
+      <workItem from="1699909869753" duration="33970000" />
     </task>
     <task id="LOCAL-00001" summary="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
       <created>1698535043616</created>
@@ -360,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700072830788</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Updated the Test Suite">
+      <option name="closed" value="true" />
+      <created>1700082971571</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1700082971571</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +403,8 @@
     <MESSAGE value="Updated Main" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Way too big to be a commit, I will do better next time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Way too big to be a commit, I will do better next time" />
+    <MESSAGE value="Updated the Test Suite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Test Suite" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
