@@ -1,21 +1,20 @@
-package org.bikeshare.model.services.riderbikestatusservice;
+package org.bikeshare.model.services.riderservice;
 
 import org.bikeshare.model.business.exception.ServiceLoadException;
-import org.bikeshare.model.domain.Bike;
-import org.bikeshare.model.domain.BikeSize;
-import org.bikeshare.model.domain.BikeType;
-import org.bikeshare.model.domain.Rider;
+import org.bikeshare.model.domain.*;
 import org.bikeshare.model.services.exceptions.RiderCheckinException;
 import org.bikeshare.model.services.exceptions.RiderCheckoutException;
 import org.bikeshare.model.services.factory.ServiceFactory;
-import org.bikeshare.model.services.riderservice.IRiderService;
-import org.bikeshare.model.services.riderservice.RiderServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
 import static org.junit.Assert.*;
 
-public class RiderBikeStatusServiceTest {
+public class RiderServiceTest {
 
         Rider riderWithBike;
         Rider riderWithoutBike;
@@ -52,7 +51,7 @@ public class RiderBikeStatusServiceTest {
         @Test
         public void testRiderServiceAddBikeToRider() {
             try{
-                riderService.addBikeToRider(riderWithBike, testBike);
+                riderService.checkoutBike(riderWithBike, testBike);
             }catch (RiderCheckoutException e){
                 assertEquals(e.getMessage(), "Rider already has a bike");
             }
@@ -60,13 +59,17 @@ public class RiderBikeStatusServiceTest {
         }
 
         @Test
-        public void testRiderServiceReturnRidersBike() throws RiderCheckinException {
+        public void testRiderServiceReturnRidersBike(){
             try{
                 riderService.returnRidersBike(riderWithoutBike);
             }catch (RiderCheckinException e){
                 assertEquals(e.getMessage(), "This rider has no bike to checkin");
             }
-            assertEquals(true,riderService.returnRidersBike(riderWithBike));
+            try {
+                assertEquals(true,riderService.returnRidersBike(riderWithBike));
+            } catch (RiderCheckinException e) {
+                throw new RuntimeException(e);
+            }
         }
 
         @Test
@@ -76,6 +79,34 @@ public class RiderBikeStatusServiceTest {
             assertEquals("name",riderWithoutBike.getLastName());
         }
 
+        @Test
+        public void testRiderRegistrationService() {
+
+            Rider rider = new Rider("For", "Testing", "test@junit.org","password");
+            TripComposite tripComposite = new TripComposite();
+            tripComposite.setRider(rider);
+
+            assertTrue(riderService.registerNewRider(tripComposite));
+
+            /**
+             * Would like to research if there is a better way to do this, but since a new user gets
+             * created for this test the below deletes the user from the DB after the test is complete
+             */
+            final String DATABASE_URL = "jdbc:mysql://localhost:3306/bike_share_DB";
+            final String USER = "root";
+            final String PASSWORD = "P@ssw0rd";
+            try {
+                Connection conn = DriverManager.getConnection(DATABASE_URL, USER, PASSWORD);
+                Statement stmt = conn.createStatement();
+                System.out.println("Deleting user ...");
+                String sql = "DELETE FROM `bike_share_DB`.`Rider` WHERE (`RiderEmail` = '" +
+                        tripComposite.getRider().getEmailAddress() + "');";
+                stmt.executeUpdate(sql);
+                System.out.println("Deleted user: " + tripComposite.getRider().getEmailAddress());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
         @Test
         public void testRiderService() {
 

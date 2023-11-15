@@ -25,11 +25,15 @@ public class Bike implements Serializable {
      * Indicates that the bike is in need of maintenance.
      */
     private boolean needsMaintenance;
+
+
+    private Waypoint waypoint;
     /**
      * Bike types and sizes cannot ever be changed, and are enums
      */
     private final BikeType bikeType;
     private final BikeSize bikeSize;
+
 
 
     /**
@@ -50,19 +54,26 @@ public class Bike implements Serializable {
     /**
      * Constructor to create a dummy instance of a bike
      */
-    public Bike() {
-        this.bikeSerialNum = "No Bike";
+    public Bike(String bikeSerialNum, BikeType bikeType, BikeSize bikeSize) {
+        this.bikeSerialNum = bikeSerialNum;
         this.totalMillage = 0;
         this.frontTyreMillage = 0;
         this.rearTyreMillage = 0;
         this.chainMillage = 0;
         this.inUse = false;
         this.needsMaintenance = false;
-        this.bikeType = BikeType.ROAD;
-        this.bikeSize = BikeSize.SMALL;
+        this.bikeType = bikeType;
+        this.bikeSize = bikeSize;
     }
 
 
+    public Waypoint getWaypoint() {
+        return waypoint;
+    }
+
+    public void setWaypoint(Waypoint waypoint) {
+        this.waypoint = waypoint;
+    }
     public String getBikeSerialNum() {
         return bikeSerialNum;
     }
@@ -105,10 +116,10 @@ public class Bike implements Serializable {
 
     /**
      * Method to add miles from a trip to a bike and update all the key components with the millage.
-     * @param  miles  the miles that the rider put on the bike while it was checked out.
-     * @return a string that shows the total millage plus the millage of the tyres and chain (which may be different)
+     *
+     * @param miles the miles that the rider put on the bike while it was checked out.
      */
-    public String addTripMiles(int miles){
+    public void addTripMiles(int miles){
         this.totalMillage += miles;
         this.chainMillage  += miles;
         this.frontTyreMillage += miles;
@@ -122,7 +133,6 @@ public class Bike implements Serializable {
         else if (this.rearTyreMillage > 1000){
             this.needsMaintenance = true;
         }
-        return "Bike " + this.bikeSerialNum + " now has " + this.totalMillage + " total miles | " + this.chainMillage + " miles on the chain | " + this.frontTyreMillage + " miles on the front tyre | " + this.rearTyreMillage + " miles on the rear tyre";
     }
 
     public void replaceChain(){

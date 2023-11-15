@@ -2,6 +2,8 @@ package org.bikeshare.model.services.factory;
 
 import org.bikeshare.model.business.exception.ServiceLoadException;
 import org.bikeshare.model.domain.Bike;
+import org.bikeshare.model.domain.BikeSize;
+import org.bikeshare.model.domain.BikeType;
 import org.bikeshare.model.domain.Rider;
 import org.bikeshare.model.services.loginservice.ILoginService;
 import org.bikeshare.model.services.loginservice.LoginServiceImpl;
@@ -22,7 +24,8 @@ public class ServiceFactoryTest {
         @Before
         public void setUp() {
             serviceFactory = ServiceFactory.getInstance();
-            rider = new Rider("guy","withbike","test@testme.com",true,new Bike());
+            Bike newBike = new Bike ("XYZ", BikeType.CRUISER, BikeSize.MEDIUM );
+            rider = new Rider("guy","withbike","test@testme.com",true,newBike);
         }
 
         /**

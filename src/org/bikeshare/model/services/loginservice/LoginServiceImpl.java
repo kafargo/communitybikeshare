@@ -11,21 +11,26 @@ public class LoginServiceImpl implements ILoginService {
      */
 
     public boolean authenticateRider(Rider rider) {
-        final String DATABASE_URL = "jdbc:mysql://localhost:3306/BikeShareDB";
-        final String USER = "BikeShareApp";
-        final String PASSWORD = "Test123";
-        String dbPass = "";
+
+        //this needs to be updated to check the password against a DB in the future
+        //return (rider.getPassword() != null);
+
+            final String DATABASE_URL = "jdbc:mysql://localhost:3306/bike_share_DB";
+            final String USER = "root";
+            final String PASSWORD = "P@ssw0rd";
+            String dbPass = "";
             try{
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection con=DriverManager.getConnection(DATABASE_URL,USER,PASSWORD);
                 Statement stmt=con.createStatement();
-                ResultSet rs=stmt.executeQuery("SELECT Password FROM Rider WHERE Email = '" + rider.getEmailAddress() +"';");
+                ResultSet rs=stmt.executeQuery("SELECT RiderPassword FROM Rider WHERE RiderEmail = '" + rider.getEmailAddress() +"';");
                 while(rs.next())
                     dbPass = rs.getString(1);
                 con.close();
             }catch(Exception e){ System.out.println(e);}
 
-        return rider.getPassword().equals(dbPass);
+            return rider.getPassword().equals(dbPass);
+
     }
 
 }
