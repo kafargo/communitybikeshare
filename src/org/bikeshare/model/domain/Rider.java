@@ -92,10 +92,6 @@ public class Rider implements Serializable {
         this.password = password;
     }
 
-    public Bike getCustomerBike() {
-        return bike;
-    }
-
     public Bike getBike() {
         return bike;
     }

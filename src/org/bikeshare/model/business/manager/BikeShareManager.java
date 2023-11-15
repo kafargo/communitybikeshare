@@ -48,7 +48,7 @@ public class BikeShareManager extends ManagerSuperType {
             action = registerRider(IRiderService.NAME, tripComposite);
         }
         else if (commandString.equals("CheckoutBike")) {
-            action = checkoutBike(ILoginService.NAME, tripComposite);
+            action = checkoutBike(IRiderService.NAME, tripComposite);
         }
 
         return action;

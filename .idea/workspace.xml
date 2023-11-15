@@ -4,30 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Refactoring">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/exception/PropertyFileNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/BikeShareManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/ManagerSuperType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/manager/PropertyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ApplicationTestSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/domain/AllDomainTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/services/AllServicesTests.java" afterDir="false" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Way too big to be a commit, I will do better next time">
+      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/business/AllBusinessTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/bikeshare/model/business/manager/BikeShareManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/communitybikeshare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/communitybikeshare.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/MainDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/MainDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/services/factory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/factory/ServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/services/loginservice/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/loginservice/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/services/riderservice/IRiderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/riderservice/IRiderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/services/riderservice/RiderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/riderservice/RiderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/org/bikeshare/model/domain/BikeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/bikeshare/model/domain/BikeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/org/bikeshare/model/domain/WaypointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/bikeshare/model/domain/WaypointTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/org/bikeshare/model/services/factory/ServiceFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/bikeshare/model/services/factory/ServiceFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/org/bikeshare/model/services/riderbikestatusservice/RiderBikeStatusServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/bikeshare/model/services/riderservice/RiderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/TestMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/BikeShareManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/BikeShareManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Rider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/domain/Rider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ApplicationTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ApplicationTestSuite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +96,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.bikeshare.model.business" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.bikeshare.model.domain" />
@@ -217,7 +205,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698507737232</updated>
-      <workItem from="1699909869753" duration="29298000" />
+      <workItem from="1699909869753" duration="33483000" />
     </task>
     <task id="LOCAL-00001" summary="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
       <created>1698535043616</created>
@@ -364,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699848776167</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Way too big to be a commit, I will do better next time">
+      <option name="closed" value="true" />
+      <created>1700072830788</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1700072830788</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +403,8 @@
     <MESSAGE value="Week 4 fixed README" />
     <MESSAGE value="Updated Main" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Way too big to be a commit, I will do better next time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Way too big to be a commit, I will do better next time" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
