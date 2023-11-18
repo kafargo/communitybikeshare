@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Updated the Test Suite" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Updated the Design Doc">
+      <change afterPath="$PROJECT_DIR$/design/Week5PassingTest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/Week5RunningApplication.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Week2PassingTest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Week2RunningApplication.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Week3PassingTest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Week3RunningApplication.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Week4PassingTest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Week4RunningApplication.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +207,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698507737232</updated>
-      <workItem from="1699909869753" duration="33970000" />
+      <workItem from="1699909869753" duration="35332000" />
     </task>
     <task id="LOCAL-00001" summary="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
       <created>1698535043616</created>
@@ -359,7 +370,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700082971571</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Updated the Design Doc">
+      <option name="closed" value="true" />
+      <created>1700084418061</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700084418061</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +423,8 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Way too big to be a commit, I will do better next time" />
     <MESSAGE value="Updated the Test Suite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Test Suite" />
+    <MESSAGE value="Updated the Design Doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Design Doc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
