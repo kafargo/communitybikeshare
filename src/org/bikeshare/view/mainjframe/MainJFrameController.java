@@ -42,10 +42,6 @@ public class MainJFrameController
     mainJFrame.setVisible(true);
   }
 
-  /*
-   *  (non-Javadoc)
-   * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
-   */
   public void actionPerformed(ActionEvent event) 
   {
 
@@ -74,7 +70,7 @@ public class MainJFrameController
     dlg.setModal(true);
     dlg.show();
 
-  } //end menuFileOpen_actionPerformed
+  }
 
 
   /**
@@ -101,7 +97,7 @@ public class MainJFrameController
      dlg.setModal(true);
      dlg.show();
 
-  } //end menuFileOpen_actionPerformed
+  }
 
  private void getRegisterRider_actionPerformed(ActionEvent event) {
 
@@ -110,4 +106,4 @@ public class MainJFrameController
  }
 
   
-} //end class   
+}

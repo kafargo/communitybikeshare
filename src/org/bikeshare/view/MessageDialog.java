@@ -1,9 +1,3 @@
-/*
- * MessageDialog.java
- *
- * Created on May 6, 2006, 12:05 PM
- */
-
 package org.bikeshare.view;
 
 import javax.swing.*;
@@ -12,18 +6,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * <p>
- * Title: MessageDialog.java
- * </p>
  *
  * Ideally, this class should be in a package under org.communitybikeshare.view
- * 
- * @version 1.0
+ *
  */
 public class MessageDialog extends JDialog implements ActionListener {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 5669384463178310650L;
 	JButton okBtn = new JButton("OK");
 	JLabel label = new JLabel();

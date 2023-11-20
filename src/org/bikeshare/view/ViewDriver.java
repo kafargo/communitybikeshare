@@ -8,9 +8,8 @@ import javax.swing.*;
 /**
  * ViewDriver.java
  *
- * Driver class that starts the GUI (View) of the FleetRental application.
+ * Driver class that starts the GUI (View) of the Community Bike Share application.
  *
- * @author Mike.Prasad
  */
 public class ViewDriver {
     

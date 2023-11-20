@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Week 5">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/MessageDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/ViewDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/974477a2-7e59-4ca7-9ca5-a9804290d160.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/974477a2-7e59-4ca7-9ca5-a9804290d160.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrameController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,12 +74,13 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "Week-5",
+    "git-widget-placeholder": "Week-6",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "/Users/alexfargo/IdeaProjects/communitybikeshare/src/org/bikeshare/view",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -218,7 +210,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698507737232</updated>
       <workItem from="1699909869753" duration="35332000" />
-      <workItem from="1700446282060" duration="18369000" />
+      <workItem from="1700446282060" duration="20961000" />
     </task>
     <task id="LOCAL-00001" summary="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
       <created>1698535043616</created>
@@ -389,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700084418061</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Week 5">
+      <option name="closed" value="true" />
+      <created>1700520510175</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1700520510175</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +435,8 @@
     <MESSAGE value="Way too big to be a commit, I will do better next time" />
     <MESSAGE value="Updated the Test Suite" />
     <MESSAGE value="Updated the Design Doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Design Doc" />
+    <MESSAGE value="Week 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

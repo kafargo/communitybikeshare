@@ -43,10 +43,6 @@ public class RegisterRiderJFrameController
     registerRiderJFrame.setVisible(true);
   }
 
-  /*
-   *  (non-Javadoc)
-   * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
-   */
   public void actionPerformed(ActionEvent event) 
   {
 
@@ -111,4 +107,4 @@ public class RegisterRiderJFrameController
  }
 
   
-} //end class   
+}

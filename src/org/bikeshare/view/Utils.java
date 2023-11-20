@@ -26,20 +26,4 @@ public class Utils {
                      (screenSize.height - frameSize.height) / 2);
   }
 
-  /**
-    * API to show error message
-    * @param e Exception
-    */
-   public static void showErrorMessage(Exception e) {
-     //exception occurred, so do not process further and return now after showing message.
-     MessageDialog msgDlg = new MessageDialog("Error",
-                                              e.getMessage() != null ?
-                                              e.getMessage() : "Error occurred");
-     Utils.centerWindow(msgDlg);
-     e.printStackTrace();
-     msgDlg.setModal(true);
-     msgDlg.show();
-
-  }
-
 }
