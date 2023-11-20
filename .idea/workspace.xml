@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Updated the Design Doc">
-      <change afterPath="$PROJECT_DIR$/design/Week5PassingTest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/Week5RunningApplication.png" afterDir="false" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Week 5">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/MessageDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/ViewDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/974477a2-7e59-4ca7-9ca5-a9804290d160.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/974477a2-7e59-4ca7-9ca5-a9804290d160.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Week2PassingTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Week2RunningApplication.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Week3PassingTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Week3RunningApplication.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Week4PassingTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Week4RunningApplication.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +36,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -74,13 +83,13 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Week-5",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/kevinfargo/IdeaProjects/communitybikeshare/config",
+    "last_opened_file_path": "/Users/alexfargo/IdeaProjects/communitybikeshare/src/org/bikeshare/view",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -94,6 +103,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/org/bikeshare/view" />
       <recent name="$PROJECT_DIR$/config" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -191,11 +201,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainDriver" />
+        <item itemvalue="JUnit.RiderBikeStatusServiceTest" />
+        <item itemvalue="JUnit.RiderServiceTest.testRiderServiceBikeStatusResult" />
         <item itemvalue="JUnit.BikeTest" />
         <item itemvalue="JUnit.AllDomainTests" />
-        <item itemvalue="Application.MainDriver" />
-        <item itemvalue="JUnit.RiderServiceTest.testRiderServiceBikeStatusResult" />
-        <item itemvalue="JUnit.RiderBikeStatusServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -208,6 +218,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698507737232</updated>
       <workItem from="1699909869753" duration="35332000" />
+      <workItem from="1700446282060" duration="18369000" />
     </task>
     <task id="LOCAL-00001" summary="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
       <created>1698535043616</created>
