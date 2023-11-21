@@ -2,9 +2,6 @@ package org.bikeshare.view.showwaypoints;
 
 
 import org.bikeshare.model.business.manager.BikeShareManager;
-import org.bikeshare.model.domain.Rider;
-import org.bikeshare.model.domain.TripComposite;
-import org.bikeshare.view.MessageDialog;
 import org.bikeshare.view.Utils;
 
 import java.awt.event.ActionEvent;
@@ -35,8 +32,7 @@ public class ShowWaypointsJFrameController
     this.showWaypointsJFrame = showWaypointsJFrame;
 
     //add all the action listeners here
-    showWaypointsJFrame.getOkButton().addActionListener(this);
-    showWaypointsJFrame.getCancelButton().addActionListener(this);
+    showWaypointsJFrame.getReturnButton().addActionListener(this);
        
     // center the frame
     Utils.centerWindow(showWaypointsJFrame);
@@ -52,23 +48,15 @@ public class ShowWaypointsJFrameController
   {
 
     System.out.println ("Inside ShowWaypointsJFrameController::actionPerformed");
-    
-    if (event.getSource().equals(showWaypointsJFrame.getOkButton()))
-     ok_actionPerformed(event);
-    else if (event.getSource().equals(showWaypointsJFrame.getCancelButton()))
-      cancel_actionPerformed(event);
+
+    if (event.getSource().equals(showWaypointsJFrame.getReturnButton()))
+      return_actionPerformed(event);
   }
   
 
- private void cancel_actionPerformed(ActionEvent event) {
+ private void return_actionPerformed(ActionEvent event) {
   showWaypointsJFrame.setVisible(false);
   showWaypointsJFrame.dispose();
- }
-
-
- private void ok_actionPerformed(ActionEvent event) {
-     showWaypointsJFrame.setVisible(false);
-     showWaypointsJFrame.dispose();
  }
 
   

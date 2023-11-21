@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Week 6 Initial">
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/waypointservice/IWaypointService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/model/services/waypointservice/WaypointServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/showwaypoints/ShowWaypointsJFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bikeshare/view/showwaypoints/ShowWaypointsJFrameController.java" afterDir="false" />
+    <list default="true" id="572932fb-301f-4d59-9a31-a1f343023158" name="Changes" comment="Week 7 Initial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/MainDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/MainDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/BikeShareManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/BikeShareManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/ManagerSuperType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/model/business/manager/ManagerSuperType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/mainjframe/MainJFrameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/registerriderjframe/RegisterRiderJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/showwaypoints/ShowWaypointsJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/showwaypoints/ShowWaypointsJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bikeshare/view/showwaypoints/ShowWaypointsJFrameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bikeshare/view/showwaypoints/ShowWaypointsJFrameController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +209,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698507737232</updated>
       <workItem from="1699909869753" duration="35332000" />
-      <workItem from="1700446282060" duration="30306000" />
+      <workItem from="1700446282060" duration="32557000" />
     </task>
     <task id="LOCAL-00001" summary="The very fisrt version of the application. A good deal of comments need to be added to this code, but this is a start.">
       <created>1698535043616</created>
@@ -404,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700522969150</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Week 7 Initial">
+      <option name="closed" value="true" />
+      <created>1700550972893</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1700550972893</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +452,8 @@
     <MESSAGE value="Updated the Design Doc" />
     <MESSAGE value="Week 5" />
     <MESSAGE value="Week 6 Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 6 Initial" />
+    <MESSAGE value="Week 7 Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 7 Initial" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

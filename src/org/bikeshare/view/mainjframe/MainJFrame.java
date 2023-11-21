@@ -91,7 +91,7 @@ public class MainJFrame extends javax.swing.JFrame {
  jButtonGetWaypoints.setFont(new Font("Comic Sans MS", 1, 11)); // NOI18N
  jButtonGetWaypoints.setText("Show Waypoints");
  jPanel1.add(jButtonGetWaypoints);
- jButtonGetWaypoints.setBounds(20, 95, 150, 25);
+ jButtonGetWaypoints.setBounds(20, 110, 150, 25);
 
      // Just a demo of a Combo Box
      jPanel1.add(jBikeComboBox);

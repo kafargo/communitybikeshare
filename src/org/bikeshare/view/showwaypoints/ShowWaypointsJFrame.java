@@ -1,8 +1,6 @@
 package org.bikeshare.view.showwaypoints;
 
 
-import org.bikeshare.model.domain.Rider;
-
 /**
  * RegisterCustomerJFrame.java
  *
@@ -17,7 +15,7 @@ public class ShowWaypointsJFrame extends javax.swing.JFrame {
     public ShowWaypointsJFrame() {
         initComponents();
 
-        this.setSize(200,200);
+        this.setSize(170,220);
         this.setVisible(true); 
     }
 
@@ -25,8 +23,7 @@ public class ShowWaypointsJFrame extends javax.swing.JFrame {
 
     jPanel1 = new javax.swing.JPanel();
     jList = new javax.swing.JList<>();
-    jButtonOk = new javax.swing.JButton();
-    jButtonCancel = new javax.swing.JButton();
+    jButtonReturn = new javax.swing.JButton();
 
     ShowWaypointsJFrameController showWaypointsJFrameController = new ShowWaypointsJFrameController(this);
 
@@ -39,15 +36,11 @@ public class ShowWaypointsJFrame extends javax.swing.JFrame {
     jPanel1.setFont(new java.awt.Font("Comic Sans MS", 0, 11)); // NOI18N
     jPanel1.setLayout(null);
 
-     jButtonCancel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
-     jButtonCancel.setText("Cancel");
-     jPanel1.add(jButtonCancel);
-     jButtonCancel.setBounds(30, 200, 80, 25);
+     jButtonReturn.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
+     jButtonReturn.setText("Cancel");
+     jPanel1.add(jButtonReturn);
+     jButtonReturn.setBounds(40, 140, 80, 25);
 
-     jButtonOk.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
-     jButtonOk.setText("Ok");
-     jPanel1.add(jButtonOk);
-     jButtonOk.setBounds(95, 140, 100, 100);
 
     jList.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
     jList.setListData(showWaypointsJFrameController.showWaypoints());
@@ -55,7 +48,7 @@ public class ShowWaypointsJFrame extends javax.swing.JFrame {
     jList.setBounds(30, 30, 100, 100);
 
     getContentPane().add(jPanel1);
-    jPanel1.setBounds(0, 0, 120, 120);
+    jPanel1.setBounds(0, 0, 170, 220);
 
     pack();
  }
@@ -65,19 +58,13 @@ public class ShowWaypointsJFrame extends javax.swing.JFrame {
      * data.
      */
 
- public javax.swing.JButton getOkButton()
+ public javax.swing.JButton getReturnButton()
  {
-     return jButtonOk;
- }
-
- public javax.swing.JButton getCancelButton()
- {
-     return jButtonCancel;
+     return jButtonReturn;
  }
 
 
- private javax.swing.JButton jButtonCancel;
- private javax.swing.JButton jButtonOk;
+ private javax.swing.JButton jButtonReturn;
  private javax.swing.JList<String> jList;
  private javax.swing.JPanel jPanel1;
     
