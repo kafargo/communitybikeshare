@@ -3,6 +3,7 @@ package org.bikeshare.view.mainjframe;
 import org.bikeshare.view.MessageDialog;
 import org.bikeshare.view.Utils;
 import org.bikeshare.view.registerriderjframe.RegisterRiderJFrame;
+import org.bikeshare.view.showwaypoints.ShowWaypointsJFrame;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -36,6 +37,7 @@ public class MainJFrameController
     mainJFrame.getExitMenuItem().addActionListener(this);
     mainJFrame.getGetAvailableBikesButton().addActionListener(this);
     mainJFrame.getGetRegisterRiderButton().addActionListener(this);
+    mainJFrame.getGetWaypointsButton().addActionListener(this);
        
     // center the frame
     Utils.centerWindow(mainJFrame);
@@ -55,6 +57,8 @@ public class MainJFrameController
       getAvailableBikes_actionPerformed(event);
     else if (event.getSource().equals(mainJFrame.getGetRegisterRiderButton()))
       getRegisterRider_actionPerformed(event);
+    else if (event.getSource().equals(mainJFrame.getGetWaypointsButton()))
+        getWaypoint_actionPerformed(event);
   }
 
   /**
@@ -104,6 +108,12 @@ public class MainJFrameController
   RegisterRiderJFrame registerRiderJFrame = new RegisterRiderJFrame();
   registerRiderJFrame.show();
  }
+
+ private void getWaypoint_actionPerformed(ActionEvent event) {
+
+      ShowWaypointsJFrame showWaypointsJFrame = new ShowWaypointsJFrame();
+      showWaypointsJFrame.show();
+  }
 
   
 }

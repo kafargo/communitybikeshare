@@ -6,6 +6,7 @@ import org.bikeshare.model.services.exceptions.RiderCheckoutException;
 import org.bikeshare.model.services.factory.ServiceFactory;
 import org.bikeshare.model.services.loginservice.ILoginService;
 import org.bikeshare.model.services.riderservice.IRiderService;
+import org.bikeshare.model.services.waypointservice.IWaypointService;
 
 public class BikeShareManager extends ManagerSuperType {
 
@@ -51,6 +52,16 @@ public class BikeShareManager extends ManagerSuperType {
             action = checkoutBike(IRiderService.NAME, tripComposite);
         }
 
+        return action;
+    }
+
+    @Override
+    public String[] performAction(String commandString) {
+        String[] action = new String[0];
+
+        if (commandString.equals("GetWaypoints")) {
+            action = getWaypoints(IWaypointService.NAME);
+        }
         return action;
     }
 
@@ -112,5 +123,23 @@ public class BikeShareManager extends ManagerSuperType {
 
     }
 
+    public String[] getWaypoints(String commandString) {
+
+        String[] waypointArrayString = new String[0];
+        ServiceFactory serviceFactory = ServiceFactory.getInstance();
+        IWaypointService iWaypointService;
+
+        try {
+            iWaypointService = (IWaypointService) serviceFactory
+                    .getService(commandString);
+            waypointArrayString = iWaypointService
+                    .showWaypoints();
+        } catch (ServiceLoadException e1) {
+            System.out.println("showWaypoints failed");
+        }
+
+        return waypointArrayString;
+
+    }
 
 }

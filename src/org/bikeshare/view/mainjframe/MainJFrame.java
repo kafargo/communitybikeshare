@@ -20,7 +20,7 @@ public class MainJFrame extends javax.swing.JFrame {
     public MainJFrame() {
         initComponents();
         
-        this.setSize(200,200);
+        this.setSize(200,300);
         this.setVisible(true); 
     }
 
@@ -35,7 +35,7 @@ public class MainJFrame extends javax.swing.JFrame {
   jPanel1 = new JPanel();
   jButtonGetAvailableBikes = new JButton();
   jButtonRegisterRider = new JButton();
-
+  jButtonGetWaypoints = new JButton();
     // Demoing a Combo Box
      ArrayList<String> bikeList = new ArrayList<>();
      bikeList.add("Canyon");
@@ -88,9 +88,14 @@ public class MainJFrame extends javax.swing.JFrame {
   jPanel1.add(jButtonRegisterRider);
   jButtonRegisterRider.setBounds(20, 65, 150, 25);
 
+ jButtonGetWaypoints.setFont(new Font("Comic Sans MS", 1, 11)); // NOI18N
+ jButtonGetWaypoints.setText("Show Waypoints");
+ jPanel1.add(jButtonGetWaypoints);
+ jButtonGetWaypoints.setBounds(20, 95, 150, 25);
+
      // Just a demo of a Combo Box
      jPanel1.add(jBikeComboBox);
-     jBikeComboBox.setBounds(20, 50, 150, 150);
+     jBikeComboBox.setBounds(20, 100, 150, 150);
 
   getContentPane().add(jPanel1);
   jPanel1.setBounds(0,0,400,600);
@@ -120,8 +125,14 @@ public class MainJFrame extends javax.swing.JFrame {
         return jButtonRegisterRider;
     }
 
+    public javax.swing.JButton getGetWaypointsButton()
+    {
+        return jButtonGetWaypoints;
+    }
+
  private javax.swing.JButton jButtonGetAvailableBikes;
  private javax.swing.JButton jButtonRegisterRider;
+ private javax.swing.JButton jButtonGetWaypoints;
  private javax.swing.JMenuItem jExitMenuItem;
  private javax.swing.JMenu jFileMenu;
  private javax.swing.JMenuItem jSampleMenuItem;

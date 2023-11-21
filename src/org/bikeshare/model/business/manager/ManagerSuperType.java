@@ -46,6 +46,7 @@ abstract class ManagerSuperType {
      */
     public abstract boolean performAction(String commandString, TripComposite tripComposite);
 
+    public abstract String[] performAction(String commandString);
 
     /**
      * Loads the property file into memory so its available for use by all tiers (business and below)

@@ -9,6 +9,10 @@ import org.bikeshare.model.services.factory.ServiceFactory;
 import org.bikeshare.model.services.loginservice.ILoginService;
 import org.bikeshare.model.services.loginservice.LoginServiceImpl;
 import org.bikeshare.model.services.riderservice.IRiderService;
+import org.bikeshare.model.services.waypointservice.IWaypointService;
+import org.bikeshare.model.services.waypointservice.WaypointServiceImpl;
+
+import java.util.Arrays;
 
 public class MainDriver {
 
@@ -16,28 +20,21 @@ public class MainDriver {
 
         BikeShareManager bikeShareManager = BikeShareManager.getInstance();
 
-        Rider rider = new Rider("James", "Cameron", "james@test.org","password");
+        WaypointServiceImpl waypointService = new WaypointServiceImpl();
 
-        LoginServiceImpl login = new LoginServiceImpl();
+        System.out.println(Arrays.toString(waypointService.showWaypoints()));
 
-        System.out.println(login.authenticateRider(rider));
+        String[] waypointList = bikeShareManager.performAction("GetWaypoints");
 
-        TripComposite tripComposite = new TripComposite();
-        tripComposite.setRider(rider);
-
-        boolean isRegistered = bikeShareManager.performAction("RegisterRider", tripComposite);
-
-        String message = isRegistered ? "FleetRentalManager::main - Successfully registered customer"
-                    : "FleetRentalManager::main - Failed to registered customer";
-        System.out.println(message);
+        System.out.println(Arrays.toString(waypointList));
 
 
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
-        IService riderService;
+        IService waypointService2;
 
         try {
-            riderService = (IRiderService)serviceFactory.getService(IRiderService.NAME);
-            System.out.println(riderService.toString());
+            waypointService2 = (IWaypointService)serviceFactory.getService(IWaypointService.NAME);
+            System.out.println(waypointService2.toString());
         }
         catch(ServiceLoadException e){
             System.out.println(e);

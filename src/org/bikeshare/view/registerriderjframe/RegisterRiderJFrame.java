@@ -13,13 +13,11 @@ import org.bikeshare.model.domain.Rider;
 public class RegisterRiderJFrame extends javax.swing.JFrame {
 
 	private static final long serialVersionUID = -685641941903021280L;
-	
-	private RegisterRiderJFrameController registerRiderJFrameController;
 
     public RegisterRiderJFrame() {
         initComponents();
 
-        registerRiderJFrameController = new RegisterRiderJFrameController(this);
+        RegisterRiderJFrameController registerRiderJFrameController = new RegisterRiderJFrameController(this);
 
         this.setSize(300,200);
         this.setVisible(true); 
