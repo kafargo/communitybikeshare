@@ -10,8 +10,8 @@ This application provides the basic services for a small community to standup a 
 ![](design/UseCaseDiagram.png)
 
 
-### The app running for week 5:
-![](design/Week5RunningApplication.png)
+### The app running for week 6:
+![](design/Week6RunningApplication.png)
 
-### The app running for week 5:
-![](design/Week5PassingTest.png)
+### The app running for week 6:
+![](design/Week6PassingTest.png)
